@@ -52,9 +52,9 @@ which pip
 This should point to the `pip` under the `bin` directory of the virtual environment
 you just created, namely `cgca-ml-tuto` in this case.
 
-Navigate inside the repository and install all dependencies from `requirements.txt`
+Now install all dependencies. Here, I list out all of them to be install with `pip`:
 ```bash
-pip install -r requirements.txt
+pip install numpy scipy astropy pandas seaborn matplotlib scikit-learn
 ```
 If successful, you have a working virtual environment, separete from you system
 installation, with all the libraries needed for this tutorial!
