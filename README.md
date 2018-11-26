@@ -20,13 +20,17 @@ sudo apt-get install virtualenv
 
 It is a good practice to have a directory (say `virtualenvs` under your home
 directory) to store all virtual environments you create. Let's create a
-`python 3.5` environment under it and activate it.
+`python 3` environment under it and activate it.
 ```bash
 mkdir ~/virtualenvs
 cd ~/virtualenvs
-virtualenv cgca-ml-tuto --python=python3.5
+virtualenv cgca-ml-tuto --python=python3
 source cgca-ml-tuto/bin/activate
 ```
+
+In case of other systems (or even Unix systems), using [Miniconda](https://conda.io/docs/user-guide/install/)
+is a robust way to create virtual environments. Ensure to use the `python3` installer. Once installed
+the instructions to create and activate a virtual environment can be found [here](https://conda.io/docs/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands).
 
 At this point the name of the virtual environment should be prepended to your
 command prompt as:
@@ -54,7 +58,9 @@ you just created, namely `cgca-ml-tuto` in this case.
 
 Now install all dependencies. Here, I list out all of them to be install with `pip`:
 ```bash
-pip install numpy scipy astropy pandas seaborn matplotlib scikit-learn
+pip install numpy scipy astropy pandas seaborn matplotlib scikit-learn jupyter
 ```
+
 If successful, you have a working virtual environment, separete from you system
 installation, with all the libraries needed for this tutorial!
+`jupyter` is not necessary to run the codes, but to see and run the notebooks.
